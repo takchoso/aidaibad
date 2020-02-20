@@ -1,4 +1,4 @@
-<body class="company">
+<body class="works">
 
 <div id="container">
 
@@ -7,53 +7,55 @@
 	<!--PC用（801px以上端末）メニュー-->
 	<nav id="menubar">
 	<ul>
-	<li class="menuimg menu1 current"><a href="/"><span>Home</span></a></li>
+	<li class="menuimg menu1"><a href="/"><span>Home</span></a></li>
 	<li class="menuimg menu2"><a href="/about"><span>About us</span></a></li>
 	<li class="menuimg menu3"><a href="/result"><span>Results</span></a></li>
-	<li class="menuimg menu3"><a href="/posts"><span>News</span></a></li>
+	<li class="menuimg menu3 current"><a href="/posts"><span>News</span></a></li>
 	<li class="menuimg menu4"><a href="/link"><span>Links</span></a></li>
 	<li class="menuimg menu5"><a href="/contact"><span>Contact</span></a></li>
 	</ul>
 	</nav>
-
+	
 
 </header>
 <!--/.pc-->
 
 <!--小さな端末用（800px以下端末）で表示させるブロック-->
 <header class="sh">
-
 	<!--小さな端末用（800px以下端末）メニュー-->
 	<div id="menubar-s">
 	<nav>
-	<ul>
+<ul>
 	<li class="menuimg menu1 current"><a href="/"><span>Home</span></a></li>
 	<li class="menuimg menu2"><a href="/about"><span>About us</span></a></li>
 	<li class="menuimg menu3"><a href="/result"><span>Results</span></a></li>
-	<li class="menuimg menu3"><a href="/posts"><span>News</span></a></li>
+	<li class="menuimg menu3 current"><a href="/posts"><span>News</span></a></li>
 	<li class="menuimg menu4"><a href="/link"><span>Links</span></a></li>
 	<li class="menuimg menu5"><a href="/contact"><span>Contact</span></a></li>
 	</ul>
 	</nav>
 	
-	
 	</div>
 	<!--/#menubar-s-->
 
 </header>
+<!--/.sh-->
 
 <div id="contents">
 
 <div id="main">
 
-<span id="pagetop"></span>
+<section id="pagetop">
 
-<section class="box">
+<h2 class="title">News<span>お知らせ</span></h2>
+<% @posts.each do |post| %>
+<div class="list">
+<figure><img src="/sample2.jpg" alt=""></figure>
+<h4><%= link_to(post.title, "/posts/#{post.id}") %></h4>
+</div>
+<% end %>
 
-<h2 class="title">Results<span>試合結果</span></h2>
-
-準備中です
-<section>
+</section>
 
 
 <footer>

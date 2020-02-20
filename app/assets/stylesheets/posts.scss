@@ -1,3 +1,6 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
@@ -61,7 +64,7 @@
 }
 /*土台画像*/
 .slide0 {
-	background: #ffffff url("/logo1.png") no-repeat center 20%/auto 40%;
+	background: #fff url("/logo1.png") no-repeat center 20%/auto 40%;
 	position: relative;width: 100%;height: 100%;
 }
 /*１枚目*/
@@ -312,7 +315,8 @@ header .icon img {
 }
 /*mainブロック*/
 #main {
-	overflow: auto;
+//	overflow: auto;
+	overflow-wrap: break-word;
 	padding: 2% 5% 0 15%;		/*上、右、下、左へのブロック内の余白*/
 	height: 98%;				/*高さ*/
 	animation-duration: 0.5S;	/*アニメーションの実行時間。秒。*/
@@ -320,6 +324,7 @@ header .icon img {
 	animation-name: main;		/*上のアニメーション設定で使っているkeyframesの名前。contents。*/
 	animation-delay: 0.8s;		/*アニメーションを遅れて開始させる指定。0.5sは0.5秒の事。*/
 	position: relative;
+//	word-wrap: normal;
 }
 .top-main-position {
 	margin: 2% 5% 0 15%;		/*上、右、下、左へのブロック内の余白*/
