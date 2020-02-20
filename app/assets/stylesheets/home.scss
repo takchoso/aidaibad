@@ -148,8 +148,8 @@ a:hover {
 }
 /*link.htmlの背景画像指定*/
 .link #container {
-	background: url(../images/3.jpg) no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
-	background: url(../images/3.jpg) no-repeat center center / cover;	/*背景画像*/
+	background: url(/2.jpg) no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
+	background: url(/2.jpg) no-repeat center center / cover;	/*背景画像*/
 }
 /*contact.htmlにも背景画像を指定したい場合は、以下にスタイルを追加して下さい。*/
 .contact #container {
@@ -309,14 +309,17 @@ header .icon img {
 /*mainブロック*/
 #main {
 	overflow: auto;
-	margin: 2% 6% 0 16%;		/*上、右、下、左へのブロック内の余白*/
-	padding: 0 1%;
+	padding: 2% 5% 0 15%;		/*上、右、下、左へのブロック内の余白*/
 	height: 98%;				/*高さ*/
 	animation-duration: 0.5S;	/*アニメーションの実行時間。秒。*/
 	animation-fill-mode: both;	/*アニメーションの待機中は最初のキーフレームを、完了後は最後のキーフレームを維持する*/
 	animation-name: main;		/*上のアニメーション設定で使っているkeyframesの名前。contents。*/
 	animation-delay: 0.8s;		/*アニメーションを遅れて開始させる指定。0.5sは0.5秒の事。*/
 	position: relative;
+}
+.top-main-position {
+	margin: 2% 5% 0 15%;		/*上、右、下、左へのブロック内の余白*/
+	padding: 0 1% !important;
 }
 /*h2タグ*/
 #main h2 {
@@ -491,6 +494,12 @@ footer a {text-decoration: none;}
 	text-align: center;	/*センタリング*/
 }
 
+.center {
+	text-align: center;
+}
+.ta-left{
+  width: 50px;
+}
 /*フォーム関連
 ---------------------------------------------------------------------------*/
 /*ボタン（btn）*/
@@ -844,6 +853,8 @@ footer .pr {display: block;}
 .ta1 th {
 	width: 100px;
 }
+
+
 
 /*ul.disc,olタグ
 ---------------------------------------------------------------------------*/
